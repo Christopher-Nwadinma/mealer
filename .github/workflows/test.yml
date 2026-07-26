@@ -1,0 +1,21 @@
+# This is a basic workflow to help you get started with Actions
+name: testing testing workflow
+# event to fire the workflow
+on: 
+    push:
+        branches: main
+        # the job to automate
+jobs:
+    # your first job name
+    say-hello:
+        # on which platform to run the job
+        runs-on: ubuntu-latest
+        # what are the steps to run in the job
+        steps:
+            # step1: a name for the step and what to run in the step
+            - name: Say Hello
+              run: echo "Hello, World!"
+        # step2: a name for the step and what to run in the step
+            - name: Goodbye user
+              run: echo "Goodbye, users!"
+        
